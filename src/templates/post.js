@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import Suggested from '../components/Suggested'
 import SEO from '../components/SEO'
 import Comment from '../components/Comment'
-import Blurb from '../components/Blurb'
 
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
@@ -26,7 +25,7 @@ export default function PostTemplate({ data, pageContext }) {
         : 'github-light'
     commentScript.async = true
     commentScript.src = 'https://utteranc.es/client.js'
-    commentScript.setAttribute('repo', 'youssefsharief/comments')
+    commentScript.setAttribute('repo', 'yoosif0/comments')
     commentScript.setAttribute('issue-term', 'pathname')
     commentScript.setAttribute('id', 'utterances')
     commentScript.setAttribute('theme', theme)
@@ -36,7 +35,7 @@ export default function PostTemplate({ data, pageContext }) {
     } else {
       console.log(`Error adding utterances comments on: ${commentBox}`)
     }
-  }, []) 
+  }, [])
 
   return (
     <Layout>
@@ -47,7 +46,7 @@ export default function PostTemplate({ data, pageContext }) {
           <header className="article-header">
             <div className="container">
               <div className="thumb">
-              {thumbnail && (
+                {thumbnail && (
                   <Img
                     fixed={thumbnail.childImageSharp.fixed}
                     className="post-thumbnail"
@@ -57,7 +56,7 @@ export default function PostTemplate({ data, pageContext }) {
                   <h1>{title}</h1>
                   <div className="post-meta">
                     <div>
-                      By <Link to="/me">Youssef Sherif</Link> on{' '}
+                      By <Link to="/me">Yoosif Sherif</Link> on{' '}
                       <time>{date}</time>
                     </div>
                     {tags && (
@@ -85,21 +84,6 @@ export default function PostTemplate({ data, pageContext }) {
           />
         </article>
       </div>
-      <Blurb title="About the author">
-        <p>
-          Hey, I'm <Link to="/me">Yousof</Link>, a software engineer who loves to write performant, readable, minimalist, straightforward code
-        </p>
-        <p>
-          <a
-            className="button"
-            href="https://yousof.substack.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Join newsletter
-          </a>
-        </p>
-      </Blurb>
       <div className="container">
         <div id="comments">
           <h2>Comments</h2>

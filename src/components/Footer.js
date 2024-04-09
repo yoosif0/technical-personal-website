@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import email from '../../content/thumbnails/email.svg'
-import github from '../../content/thumbnails/github.svg'
-import stackoverflow from '../../content/thumbnails/stackoverflow.svg'
-import linkedin from '../../content/thumbnails/linkedin.svg'
+import email from '../../c/thumbnails/email.svg'
+import github from '../../c/thumbnails/github.svg'
+import stackoverflow from '../../c/thumbnails/stackoverflow.svg'
+import linkedin from '../../c/thumbnails/linkedin.svg'
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
         <nav className="footer-links">
           <Link to="/blog">Articles</Link>
           <a
-            href="https://yousof.substack.com/subscribe"
+            href="https://yoosif.substack.com/subscribe"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -22,8 +22,8 @@ export default function Footer() {
         </nav>
         <nav className="flex justify-center">
           <a
-            href="mailto:yousofsharief@protonmail.com"
-            title="yousofsharief@protonmail.com"
+            href="mailto:me@yoosif.com"
+            title="me@yoosif.com"
             target="_blank"
             rel="noopener noreferrer"
             className="img"
@@ -31,7 +31,7 @@ export default function Footer() {
             <img src={email} className="footer-img" alt="email" />
           </a>
           <a
-            href="https://github.com/youssefsharief"
+            href="https://github.com/yoosif0"
             title="GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +40,7 @@ export default function Footer() {
             <img src={github} className="footer-img" alt="email" />
           </a>
           <a
-            href="https://www.linkedin.com/in/youssefsharief"
+            href="https://www.linkedin.com/in/yoosif"
             title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Footer() {
             <img src={linkedin} className="footer-img" alt="email" />
           </a>
           <a
-            href="http://stackoverflow.com/users/8065736/youssef-sherif"
+            href="https://stackoverflow.com/users/8065736"
             title="Stackoverflow"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,14 +1,13 @@
 {
-  "name": "yousof.net",
+  "name": "yoosif.com",
   "private": true,
   "version": "3.0.0",
   "description": "Personal website running on Gatsby, React, and Node.js.",
-  "author": "Youssef Sherif",
+  "author": "Yoosif Sherif",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },

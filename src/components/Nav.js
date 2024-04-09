@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import floppy from '../../content/images/floppylogo.png'
+import floppy from '../../c/images/floppylogo.png'
 
 export default function Nav() {
   return (
@@ -12,12 +12,10 @@ export default function Nav() {
               <span className="emoji">
                 <img src={floppy} alt="Floppy Diskette" />
               </span>{' '}
-              Youssef Sherif
+              Yoosif Sherif
             </Link>
           </div>
           <div className="flex">
-            <Link to="/blog">Articles</Link>
-            <Link to="/me">About</Link>
             <button
               id="dark-mode-button"
               onClick={(event) => {

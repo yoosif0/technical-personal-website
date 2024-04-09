@@ -1,7 +1,6 @@
 export default {
-  siteTitle: 'Youssef Sherif',
-  siteUrl: 'https://www.yousof.net',
+  siteTitle: 'Yoosif Sherif',
+  siteUrl: 'https://www.yoosif.com',
   siteLogo: '/logo.png',
-  description:
-    'Software engineer',
+  description: 'Software engineer',
 }

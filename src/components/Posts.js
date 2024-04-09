@@ -11,8 +11,6 @@ const Cell = ({ node }) => {
     isNew = true
   }
 
-  const isPopular = node.categories && node.categories.includes('Popular')
-
   const dateArr = node.date.split(' ')
   dateArr.pop()
   dateArr[0] = dateArr[0].slice(0, 3)
@@ -26,7 +24,6 @@ const Cell = ({ node }) => {
           <h3>{node.title}</h3>
         </div>
         {isNew && <div className="new-post">New!</div>}
-        {isPopular && <div className="popular-post">Popular</div>}
       </Link>
     </div>
   )

@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Youssef Sherif',
+    title: 'Yoosif Sherif',
     author: {
-      name: 'Youssef Sherif',
+      name: 'Yoosif Sherif',
     },
     pathPrefix: '/',
-    siteUrl: 'https://www.yousof.net',
+    siteUrl: 'https://www.yoosif.com',
     description:
       'Software engineer and open-source creator. This is my digital garden.',
-    feedUrl: 'https://www.yousof.net/rss.xml',
-    logo: 'https://www.yousof.net/logo.png',
+    feedUrl: 'https://www.yoosif.com/rss.xml',
+    logo: 'https://www.yoosif.com/logo.png',
   },
   plugins: [
     // ===================================================================================
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Youssef Sherif',
-        short_name: 'Youssef Sherif',
+        name: 'Yoosif Sherif',
+        short_name: 'Yoosif Sherif',
         description:
           'Software engineer and open source creator. This is my digital garden.',
         start_url: '/',
@@ -58,7 +58,7 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     { 'content:encoded': edge.node.html },
-                    { author: 'hello@yousof.net' },
+                    { author: 'me@yoosif.com' },
                   ],
                 })
               })
@@ -88,7 +88,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Youssef Sherif | RSS Feed',
+            title: 'Yoosif Sherif | RSS Feed',
           },
         ],
       },
@@ -104,7 +104,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/content/`,
+        path: `${__dirname}/c/`,
       },
     },
     {
@@ -132,8 +132,8 @@ module.exports = {
               play: `${__dirname}/src/images/play.png`,
               placeholder: `${__dirname}/src/images/placeholder.gif`,
               loading: `${__dirname}/src/images/loading.gif`,
-              relativePath: `/static/gifs`
-            }
+              relativePath: `/static/gifs`,
+            },
           },
           'gatsby-remark-autolink-headers',
           {
@@ -197,7 +197,6 @@ module.exports = {
             title: node.frontmatter.title,
             body: node.rawMarkdownBody,
             tags: node.frontmatter.tags,
-            categories: node.frontmatter.categories,
             date: node.frontmatter.date,
           })),
       },

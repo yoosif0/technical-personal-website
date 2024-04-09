@@ -7,7 +7,6 @@ import Posts from '../components/Posts'
 import Guides from '../components/Guides'
 import Projects from '../components/Projects'
 import SEO from '../components/SEO'
-import Blurb from '../components/Blurb'
 
 import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
@@ -42,32 +41,6 @@ export default function BlogIndex({ data }) {
     <Layout>
       <Helmet title={config.siteTitle} />
       <SEO />
-      <Blurb title="I'm Youssef Sherif.">
-        <p>
-          I'm a software engineer who loves to write performant, readable, minimalist, straightforward code
-        </p>
-        <p className="stack-mobile">
-          <Link className="button" to="/me">
-            About me
-          </Link>
-          <a
-            className="button"
-            href="https://yousof.substack.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Join newsletter
-          </a>
-          <a
-            className="button"
-            href="https://github.com/youssefsharief"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
-      </Blurb>
       <div className="container index">
         <Section title="Latest Articles" button>
           <Posts data={simplifiedLatest} />
@@ -76,7 +49,7 @@ export default function BlogIndex({ data }) {
           <Guides data={outsideArticles} frontPage />
         </Section>
         <Section title="Courses">
-        <Guides data={speaking} frontPage />
+          <Guides data={speaking} frontPage />
         </Section>
         <Section title="Open Source Projects">
           <Projects data={projects} />
@@ -84,7 +57,7 @@ export default function BlogIndex({ data }) {
         <Section title="Newsletter">
           <p>I send out an email when I create something new.</p>
           <a
-            href="https://yousof.substack.com/subscribe"
+            href="https://yoosif.substack.com/subscribe"
             target="_blank"
             rel="noreferrer"
             className="button large"
