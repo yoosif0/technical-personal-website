@@ -1,11 +1,9 @@
 ---
-slug: 'Front-end-for-an-Arabic-End-to-end-neural networks-TTS-System'
-date: '2018-10-13'
-title: 'Why Use Neural Networks in TTS systems?'
-template: 'post'
-tags: ['tts', 'neural networks', 'machine learning']
-
-description: ''
+slug: "Front-end-for-an-Arabic-End-to-end-neural networks-TTS-System"
+date: "2018-10-13"
+title: "Why Use Neural Networks in TTS systems?"
+tags: ["tts", "neural networks", "machine learning"]
+description: ""
 ---
 
 In the previous blog, we went through the different methods of speech synthesis. HTS systems were the best till the arrival of neural networks. In this blog, we would discuss different neural network text to speech systems. We will start by preliminary conventional deep neural networks (DNNs) until we reach the most advanced Bidirectional LSTMs.

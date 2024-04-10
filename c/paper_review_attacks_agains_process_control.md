@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_attacks_agains_process_control'
-date: '2019-03-11'
-title: 'Paper Review: Attacks Against Process Control Systems:Risk Assessment, Detection, and Response'
-template: 'post'
-tags: ['paper review', 'attacks', 'process control']
-
+slug: "paper_review_attacks_agains_process_control"
+date: "2019-03-11"
+title: "Paper Review: Attacks Against Process Control Systems:Risk Assessment, Detection, and Response"
+tags: ["paper review", "attacks", "process control"]
 description: 'This is a paper review for: Cárdenas, Alvaro A., et al. "Attacks against process control systems: risk assessment, detection, and response." Proceedings of the 6th ACM symposium on information, computer and communications security. 2011.'
 ---
 

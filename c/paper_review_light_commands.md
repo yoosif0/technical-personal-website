@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_light_commands'
-date: '2020-03-25'
-title: 'Paper Review: Light Commands: Laser-Based Audio Injection Attacks on Voice-Controllable Systems'
-template: 'post'
-tags: ['paper review', 'photoacoustics', 'security']
-
+slug: "paper_review_light_commands"
+date: "2020-03-25"
+title: "Paper Review: Light Commands: Laser-Based Audio Injection Attacks on Voice-Controllable Systems"
+tags: ["paper review", "photoacoustics", "security"]
 description: 'This is a paper review for: Sugawara, Takeshi, et al. "Light commands: laser-based audio injection attacks on voice-controllable systems." 29th {USENIX} Security Symposium ({USENIX} Security 20). 2020.'
 ---
 

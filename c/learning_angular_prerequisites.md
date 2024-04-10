@@ -1,14 +1,11 @@
 ---
-slug: 'learning-angular-prerequisites'
-date: '2017-11-11'
-title: 'Learning Angular Prerequisites'
-template: 'post'
+slug: "learning-angular-prerequisites"
+date: "2017-11-11"
+title: "Learning Angular Prerequisites"
 tags:
-  ['front end', 'spa', 'Angular', 'DOM', 'component based architecture', 'OOP']
-
-description: 'Learning Angular Prerequisites'
-thumbnail: './images/black_angular.png'
-topic: 'Learning Angular Prerequisites'
+  ["front end", "spa", "Angular", "DOM", "component based architecture", "OOP"]
+description: "Learning Angular Prerequisites"
+thumbnail: "./images/black_angular.png"
 ---
 
 # Learning Angular Prerequisites

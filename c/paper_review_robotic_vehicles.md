@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_rocking_drones'
-date: '2019-04-01'
-title: 'Paper Review: Detecting attacks against robotic vehicles: A control invariant approach.'
-template: 'post'
-tags: ['paper review', 'robotic vehicles', 'security', 'attacks']
-
+slug: "paper_review_rocking_drones"
+date: "2019-04-01"
+title: "Paper Review: Detecting attacks against robotic vehicles: A control invariant approach."
+tags: ["paper review", "robotic vehicles", "security", "attacks"]
 description: 'This is a paper review for: Choi, Hongjun, et al. "Detecting attacks against robotic vehicles: A control invariant approach." Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security. 2018.'
 ---
 

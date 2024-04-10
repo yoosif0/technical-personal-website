@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_backdoor'
-date: '2020-03-25'
-title: 'Paper Review: BackDoor: Making Microphones Hear Inaudible Sounds'
-template: 'post'
-tags: ['paper review', 'microphones', 'security']
-
+slug: "paper_review_backdoor"
+date: "2020-03-25"
+title: "Paper Review: BackDoor: Making Microphones Hear Inaudible Sounds"
+tags: ["paper review", "microphones", "security"]
 description: 'This is a paper review for: Roy, Nirupam, Haitham Hassanieh, and Romit Roy Choudhury. "Backdoor: Making microphones hear inaudible sounds." Proceedings of the 15th Annual International Conference on Mobile Systems, Applications, and Services. 2017.'
 ---
 

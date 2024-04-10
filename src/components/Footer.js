@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import email from '../../c/thumbnails/email.svg'
-import github from '../../c/thumbnails/github.svg'
-import stackoverflow from '../../c/thumbnails/stackoverflow.svg'
-import linkedin from '../../c/thumbnails/linkedin.svg'
+import React from "react";
+import { Link } from "gatsby";
+import email from "../../c/thumbnails/email.svg";
+import github from "../../c/thumbnails/github.svg";
+import stackoverflow from "../../c/thumbnails/stackoverflow.svg";
+import linkedin from "../../c/thumbnails/linkedin.svg";
 
 export default function Footer() {
   return (
@@ -11,14 +11,6 @@ export default function Footer() {
       <section className="container">
         <nav className="footer-links">
           <Link to="/blog">Articles</Link>
-          <a
-            href="https://yoosif.substack.com/subscribe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Newsletter
-          </a>
-          <Link to="/rss.xml">RSS</Link>
         </nav>
         <nav className="flex justify-center">
           <a
@@ -60,5 +52,5 @@ export default function Footer() {
         </nav>
       </section>
     </footer>
-  )
+  );
 }

@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_automotive_attack_surfaces'
-date: '2020-02-12'
-title: 'Paper Review: Comprehensive Experimental Analyses ofAutomotive Attack Surfaces'
-template: 'post'
-tags: ['paper review', 'iot']
-
+slug: "paper_review_automotive_attack_surfaces"
+date: "2020-02-12"
+title: "Paper Review: Comprehensive Experimental Analyses ofAutomotive Attack Surfaces"
+tags: ["paper review", "iot"]
 description: 'This is a paper review for: Checkoway, Stephen, et al. "Comprehensive experimental analyses of automotive attack surfaces." USENIX Security Symposium. Vol. 4. 2011.'
 ---
 

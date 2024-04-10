@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_false_data_injection'
-date: '2019-03-11'
-title: 'Paper Review: False Data Injection Attacks against State Estimation in Electric Power Grids'
-template: 'post'
-tags: ['paper review', 'attacks', 'robotics']
-
+slug: "paper_review_false_data_injection"
+date: "2019-03-11"
+title: "Paper Review: False Data Injection Attacks against State Estimation in Electric Power Grids"
+tags: ["paper review", "attacks", "robotics"]
 description: 'This is a paper review for: Liu, Yao, Peng Ning, and Michael K. Reiter. "False data injection attacks against state estimation in electric power grids." ACM Transactions on Information and System Security (TISSEC) 14.1 (2011): 1-33.'
 ---
 

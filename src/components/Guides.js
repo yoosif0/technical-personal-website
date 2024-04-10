@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import React from "react";
+import { Link } from "gatsby";
+// import { GatsbyImage } from "gatsby-plugin-image";
 
-import { slugify } from '../utils/helpers'
+import { slugify } from "../utils/helpers";
 
 export default function Guides({ data, frontPage }) {
   const LinkType = ({ guide, children }) =>
@@ -11,29 +11,29 @@ export default function Guides({ data, frontPage }) {
         {children}
       </Link>
     ) : (
-        <a href={guide.path} className="image-link">
-          {children}
-        </a>
-      )
+      <a href={guide.path} className="image-link">
+        {children}
+      </a>
+    );
 
   return (
-    <div className={frontPage ? 'guides front-page' : 'guides'}>
+    <div className={frontPage ? "guides front-page" : "guides"}>
       {data.map((guide) => {
         return (
           <div className="guide" key={guide.id}>
             <div>
               <LinkType guide={guide}>
-                {
-                  guide.staticThumbnail ? (
-                    <img
-                      src={guide.staticThumbnail}
-                      alt={guide.id}
-                      height="50"
-                      width="50"
-                    />
-                  ) : (
-                      <Img fixed={guide.thumbnail} />
-                    )}
+                {guide.staticThumbnail ? (
+                  <img
+                    src={guide.staticThumbnail}
+                    alt={guide.id}
+                    height="50"
+                    width="50"
+                  />
+                ) : (
+                  <div></div>
+                  // <GatsbyImage image={guide.thumbnail} />
+                )}
               </LinkType>
             </div>
             <div>
@@ -44,7 +44,7 @@ export default function Guides({ data, frontPage }) {
                 <p className="description">{guide.description}</p>
               )}
               {guide.tags && (
-                <div className="tags" style={{ marginTop: '1rem' }}>
+                <div className="tags" style={{ marginTop: "1rem" }}>
                   {guide.tags.map((tag) => (
                     <Link
                       key={tag}
@@ -58,8 +58,8 @@ export default function Guides({ data, frontPage }) {
               )}
             </div>
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }

@@ -2,12 +2,9 @@
 slug: "paper_review_javascript_the_uncovered_parts"
 date: "2019-01-30"
 title: "Paper Review: Javascript the Uncovered Parts"
-template: "post"
 tags: ["paper review", "javscript", "testing", "DOM"]
-
 description: 'This is a paper review for: Fard, Amin Milani, and Ali Mesbah. "JavaScript: The (un) covered parts." In Software Testing,
 Verification and Validation (ICST), 2017 IEEE International Conference on, pp. 230-240. IEEE, 2017.'
-topic: "Paper Review: Javascript the Uncovered Parts"
 ---
 
 ## Summary

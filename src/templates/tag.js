@@ -1,25 +1,23 @@
-import React, { useMemo } from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import React, { useMemo } from "react";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 
-import Layout from '../components/Layout'
-import Posts from '../components/Posts'
-import SEO from '../components/SEO'
+import Layout from "../components/Layout";
+import Posts from "../components/Posts";
 
-import { getSimplifiedPosts } from '../utils/helpers'
-import config from '../utils/config'
+import { getSimplifiedPosts } from "../utils/helpers";
+import config from "../utils/config";
 
 export default function TagTemplate({ data, pageContext }) {
-  const { tag } = pageContext
-  const { totalCount } = data.allMarkdownRemark
-  const posts = data.allMarkdownRemark.edges
-  const simplifiedPosts = useMemo(() => getSimplifiedPosts(posts), [posts])
-  const message = totalCount === 1 ? ' post found.' : ' posts found.'
+  const { tag } = pageContext;
+  const { totalCount } = data.allMarkdownRemark;
+  const posts = data.allMarkdownRemark.edges;
+  const simplifiedPosts = useMemo(() => getSimplifiedPosts(posts), [posts]);
+  const message = totalCount === 1 ? " post found." : " posts found.";
 
   return (
     <Layout>
       <Helmet title={`Posts tagged: ${tag} | ${config.siteTitle}`} />
-      <SEO />
       <header>
         <div className="container">
           <h1>Posts tagged: {tag}</h1>
@@ -33,13 +31,13 @@ export default function TagTemplate({ data, pageContext }) {
         <Posts data={simplifiedPosts} />
       </section>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
@@ -58,4 +56,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

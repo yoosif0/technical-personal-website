@@ -1,62 +1,39 @@
-import React, { useEffect } from 'react'
-import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Helmet from "react-helmet";
+// import { GatsbyImage } from "gatsby-plugin-image";
 
-import Layout from '../components/Layout'
-import Suggested from '../components/Suggested'
-import SEO from '../components/SEO'
-import Comment from '../components/Comment'
+import Layout from "../components/Layout";
+import Suggested from "../components/Suggested";
 
-import config from '../utils/config'
-import { slugify } from '../utils/helpers'
+import config from "../utils/config";
+import { slugify } from "../utils/helpers";
 
 export default function PostTemplate({ data, pageContext }) {
-  const post = data.markdownRemark
-  const { previous, next } = pageContext
-  const { tags, thumbnail, title, description, date } = post.frontmatter
-  const commentBox = React.createRef()
-
-  useEffect(() => {
-    const commentScript = document.createElement('script')
-    const theme =
-      typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark'
-        ? 'github-dark'
-        : 'github-light'
-    commentScript.async = true
-    commentScript.src = 'https://utteranc.es/client.js'
-    commentScript.setAttribute('repo', 'yoosif0/comments')
-    commentScript.setAttribute('issue-term', 'pathname')
-    commentScript.setAttribute('id', 'utterances')
-    commentScript.setAttribute('theme', theme)
-    commentScript.setAttribute('crossorigin', 'anonymous')
-    if (commentBox && commentBox.current) {
-      commentBox.current.appendChild(commentScript)
-    } else {
-      console.log(`Error adding utterances comments on: ${commentBox}`)
-    }
-  }, [])
+  const post = data.markdownRemark;
+  const { previous, next } = pageContext;
+  const { tags, thumbnail, title, description, date } = post.frontmatter;
 
   return (
     <Layout>
       <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-      <SEO postPath={post.fields.slug} postNode={post} postSEO />
       <div className="container">
         <article>
           <header className="article-header">
             <div className="container">
               <div className="thumb">
                 {thumbnail && (
-                  <Img
-                    fixed={thumbnail.childImageSharp.fixed}
-                    className="post-thumbnail"
-                  />
+                  // <Img
+                  //   fixed={thumbnail.childImageSharp.fixed}
+                  //   className="post-thumbnail"
+                  // />
+                  <div> </div>
                 )}
                 <div>
                   <h1>{title}</h1>
                   <div className="post-meta">
                     <div>
-                      By <Link to="/me">Yoosif Sherif</Link> on{' '}
+                      By <Link to="/me">Yoosif Sherif</Link> on{" "}
                       <time>{date}</time>
                     </div>
                     {tags && (
@@ -85,22 +62,16 @@ export default function PostTemplate({ data, pageContext }) {
         </article>
       </div>
       <div className="container">
-        <div id="comments">
-          <h2>Comments</h2>
-          <Comment commentBox={commentBox} />
-        </div>
-
         <Suggested previous={previous} next={next} />
       </div>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
       fields {
         slug
       }
@@ -119,4 +90,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

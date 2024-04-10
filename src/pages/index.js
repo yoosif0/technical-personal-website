@@ -1,27 +1,22 @@
-import React, { useMemo } from 'react'
-import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import React, { useMemo } from "react";
+import { Link, graphql } from "gatsby";
+import Helmet from "react-helmet";
 
-import Layout from '../components/Layout'
-import Posts from '../components/Posts'
-import Guides from '../components/Guides'
-import Projects from '../components/Projects'
-import SEO from '../components/SEO'
+import Layout from "../components/Layout";
+import Posts from "../components/Posts";
+import Guides from "../components/Guides";
+import Projects from "../components/Projects";
 
-import { getSimplifiedPosts } from '../utils/helpers'
-import config from '../utils/config'
+import { getSimplifiedPosts } from "../utils/helpers";
+import config from "../utils/config";
 
-import projects from '../data/projects'
-import speaking from '../data/speaking'
-import outsideArticles from '../data/outside-articles'
+import projects from "../data/projects";
+import speaking from "../data/speaking";
+import outsideArticles from "../data/outside-articles";
 
 export default function BlogIndex({ data }) {
-  const latest = data.latest.edges
-  // const popular = data.popular.edges
-  const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest])
-  // const simplifiedPopular = useMemo(() => getSimplifiedPosts(popular), [
-  //   popular,
-  // ])
+  const latest = data.latest.edges;
+  const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest]);
 
   const Section = ({ title, children, button, ...props }) => (
     <section {...props}>
@@ -35,12 +30,11 @@ export default function BlogIndex({ data }) {
       </h2>
       {children}
     </section>
-  )
+  );
 
   return (
     <Layout>
       <Helmet title={config.siteTitle} />
-      <SEO />
       <div className="container index">
         <Section title="Latest Articles" button>
           <Posts data={simplifiedLatest} />
@@ -54,29 +48,14 @@ export default function BlogIndex({ data }) {
         <Section title="Open Source Projects">
           <Projects data={projects} />
         </Section>
-        <Section title="Newsletter">
-          <p>I send out an email when I create something new.</p>
-          <a
-            href="https://yoosif.substack.com/subscribe"
-            target="_blank"
-            rel="noreferrer"
-            className="button large"
-          >
-            <span className="emoji">💌</span> Get the Newsletter
-          </a>
-        </Section>
       </div>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
   query IndexQuery {
-    latest: allMarkdownRemark(
-      limit: 5
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
-    ) {
+    latest: allMarkdownRemark(limit: 5, sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           id
@@ -92,4 +71,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

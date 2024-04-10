@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_targeted_attacks_surgical_robots'
-date: '2019-03-04'
-title: 'Paper Review: Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-based Detection and Mitigation'
-template: 'post'
-tags: ['paper review', 'attacks', 'robotics']
-
+slug: "paper_review_targeted_attacks_surgical_robots"
+date: "2019-03-04"
+title: "Paper Review: Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-based Detection and Mitigation"
+tags: ["paper review", "attacks", "robotics"]
 description: 'This is a paper review for: Alemzadeh, Homa, et al. "Targeted attacks on teleoperated surgical robots: Dynamic model-based detection and mitigation." 2016 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN). IEEE, 2016.'
 ---
 

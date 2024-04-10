@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_pacemakers'
-date: '2019-03-04'
-title: 'Paper Review: Pacemakers and Implantable Cardiac Defibrillators: Software Radio Attacks and Zero-Power Defenses'
-template: 'post'
-tags: ['paper review', 'software', 'radio attacks', 'defenses']
-
+slug: "paper_review_pacemakers"
+date: "2019-03-04"
+title: "Paper Review: Pacemakers and Implantable Cardiac Defibrillators: Software Radio Attacks and Zero-Power Defenses"
+tags: ["paper review", "software", "radio attacks", "defenses"]
 description: 'This is a paper review for: Halperin, Daniel, et al. "Pacemakers and implantable cardiac defibrillators: Software radio attacks and zero-power defenses." 2008 IEEE Symposium on Security and Privacy (sp 2008). IEEE, 2008.'
 ---
 

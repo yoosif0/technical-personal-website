@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_security_analysis_smart_home'
-date: '2020-02-05'
-title: 'Paper Review: Security Analysis of Emerging Smart Home Applications'
-template: 'post'
-tags: ['paper review', 'iot']
-
+slug: "paper_review_security_analysis_smart_home"
+date: "2020-02-05"
+title: "Paper Review: Security Analysis of Emerging Smart Home Applications"
+tags: ["paper review", "iot"]
 description: 'This is a paper review for: Fernandes, Earlence, Jaeyeon Jung, and Atul Prakash. "Security analysis of emerging smart home applications." 2016 IEEE symposium on security and privacy (SP). IEEE, 2016.'
 ---
 

@@ -1,23 +1,20 @@
 ---
-slug: 'flex-game-defense'
-date: '2020-05-29'
-title: 'Flexbox defense Game Review'
-template: 'post'
+slug: "flex-game-defense"
+date: "2020-05-29"
+title: "Flexbox defense Game Review"
 tags:
   [
-    'game',
-    'gamification',
-    'CSS',
-    'flexbox',
-    'frontend',
-    'game review',
-    'game-based-learning',
+    "game",
+    "gamification",
+    "CSS",
+    "flexbox",
+    "frontend",
+    "game review",
+    "game-based-learning",
   ]
 
-description: 'Flexbox defense Game Review'
+description: "Flexbox defense Game Review"
 thumbnail: null
-# thumbnail: "images/floppylogo.png"
-topic: 'fd'
 ---
 
 This article is a game review for [_Flexbox defense_](http://www.flexboxdefense.com/). This game teaches flexbox, a CSS's layout model. CSS is a language used for structuring and styling web pages. Flexbox is an intuitive layout model that CSS has recently used. A webpage's layout model defines the positioning of objects on the webpage.

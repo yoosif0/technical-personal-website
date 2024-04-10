@@ -6,21 +6,21 @@ export function getSimplifiedPosts(posts, options = {}) {
     tags: post.node.frontmatter.tags,
     title: post.node.frontmatter.title,
     description: post.node.frontmatter.description,
-    topic: post.node.frontmatter.topic,
     ...(options.thumbnails && {
       thumbnail: post.node.frontmatter.thumbnail.childImageSharp.fixed,
     }),
-  }))
+  }));
 }
 
 export function slugify(string) {
-  return (
-    string &&
-    string
-      .match(
-        /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
-      )
-      .map((x) => x.toLowerCase())
-      .join('-')
-  )
+  if (!string) {
+    return "";
+  }
+  const x = string.match(
+    /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+  );
+  if (!x) {
+    return "";
+  }
+  return x.map((x) => x.toLowerCase()).join("-");
 }

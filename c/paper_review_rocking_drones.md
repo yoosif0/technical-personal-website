@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_rocking_drones'
-date: '2019-04-01'
-title: 'Paper Review: Rocking Drones with Intentional Sound Noise on Gyroscopic Sensors Yunmok'
-template: 'post'
-tags: ['paper review', 'drones', 'acoustics', 'security']
-
+slug: "paper_review_rocking_drones"
+date: "2019-04-01"
+title: "Paper Review: Rocking Drones with Intentional Sound Noise on Gyroscopic Sensors Yunmok"
+tags: ["paper review", "drones", "acoustics", "security"]
 description: 'This is a paper review for: Son, Yunmok, et al. "Rocking drones with intentional sound noise on gyroscopic sensors." 24th {USENIX} Security Symposium ({USENIX} Security 15). 2015.'
 ---
 

@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_error_handling'
-date: '2020-02-12'
-title: 'Paper Review: Error Handling of In-vehicle Networks Makes Them Vulnerable'
-template: 'post'
-tags: ['paper review', 'ecu', 'error handling', 'DoS', 'automotive']
-
+slug: "paper_review_error_handling"
+date: "2020-02-12"
+title: "Paper Review: Error Handling of In-vehicle Networks Makes Them Vulnerable"
+tags: ["paper review", "ecu", "error handling", "DoS", "automotive"]
 description: 'This is a paper review for: Cho, Kyong-Tak, and Kang G. Shin. "Error handling of in-vehicle networks makes them vulnerable." Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. 2016.'
 ---
 

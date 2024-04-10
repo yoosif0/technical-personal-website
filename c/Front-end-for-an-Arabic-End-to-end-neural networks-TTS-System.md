@@ -1,11 +1,9 @@
 ---
-slug: 'Front-end-for-an-Arabic-End-to-end-neural networks-TTS-System'
-date: '2018-10-12'
-title: 'TTS Frontend for Arabic'
-template: 'post'
-tags: ['tts']
-
-description: ''
+slug: "Front-end-for-an-Arabic-End-to-end-neural networks-TTS-System"
+date: "2018-10-12"
+title: "TTS Frontend for Arabic"
+tags: ["tts"]
+description: ""
 ---
 
 Text to speech synthesis is the process of converting a text string into a waveform. A conventional TTS system is usually made up of several

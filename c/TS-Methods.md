@@ -1,11 +1,9 @@
 ---
-slug: 'TTS Methods'
-date: '2018-10-14'
-title: 'TTS Methods'
-template: 'post'
-tags: ['tts']
-
-description: ''
+slug: "TTS Methods"
+date: "2018-10-14"
+title: "TTS Methods"
+tags: ["tts"]
+description: ""
 ---
 
 Text to speech synthesis is the process of converting a text string into a waveform. A conventional TTS system is usually made up of several

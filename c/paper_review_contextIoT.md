@@ -1,10 +1,8 @@
 ---
-slug: 'paper_review_contextIot'
-date: '2020-02-05'
-title: 'Paper Review: ContexloT: Towards Providing Contextual Integrity to Appified IoT Platforms'
-template: 'post'
-tags: ['paper review', 'iot']
-
+slug: "paper_review_contextIot"
+date: "2020-02-05"
+title: "Paper Review: ContexloT: Towards Providing Contextual Integrity to Appified IoT Platforms"
+tags: ["paper review", "iot"]
 description: 'This is a paper review for: Jia, Yunhan Jack, et al. "ContexloT: Towards Providing Contextual Integrity to Appified IoT Platforms." NDSS. Vol. 2. No. 2. 2017.'
 ---
 
